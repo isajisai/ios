@@ -1,0 +1,6 @@
+source 'https://github.com/CocoaPods/Specs.git'
+project ‘/Users/user/master_repo/ios/mapMe/mapMe.xcodeproj’
+target 'mapMe' do
+pod 'GoogleMaps'
+pod 'GooglePlaces'
+end

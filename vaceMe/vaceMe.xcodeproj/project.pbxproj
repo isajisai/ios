@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D99AE7497C44191C0CAC36B /* libPods-vaceMe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A93F98309EB55292D326C7A /* libPods-vaceMe.a */; };
+		CE7CC07F1F53811600B35588 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CC07E1F53811600B35588 /* AppDelegate.swift */; };
+		CE7CC0811F53811600B35588 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CC0801F53811600B35588 /* ViewController.swift */; };
+		CE7CC0841F53811600B35588 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7CC0821F53811600B35588 /* Main.storyboard */; };
+		CE7CC0871F53811600B35588 /* vaceMe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE7CC0851F53811600B35588 /* vaceMe.xcdatamodeld */; };
+		CE7CC0891F53811600B35588 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7CC0881F53811600B35588 /* Assets.xcassets */; };
+		CE7CC08C1F53811600B35588 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7CC08A1F53811600B35588 /* LaunchScreen.storyboard */; };
+		CE7CC0971F53811600B35588 /* vaceMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CC0961F53811600B35588 /* vaceMeTests.swift */; };
+		CE7CC0A21F53811700B35588 /* vaceMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CC0A11F53811700B35588 /* vaceMeUITests.swift */; };
+		CE7CC0B01F53816D00B35588 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CE7CC0AF1F53816D00B35588 /* Podfile */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE7CC0931F53811600B35588 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE7CC0731F53811600B35588 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE7CC07A1F53811600B35588;
+			remoteInfo = vaceMe;
+		};
+		CE7CC09E1F53811700B35588 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE7CC0731F53811600B35588 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE7CC07A1F53811600B35588;
+			remoteInfo = vaceMe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8A93F98309EB55292D326C7A /* libPods-vaceMe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-vaceMe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		971B532D29A0B4F47B89CDE9 /* Pods-vaceMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vaceMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-vaceMe/Pods-vaceMe.debug.xcconfig"; sourceTree = "<group>"; };
+		BB08F726CD881FAF8F7F9D57 /* Pods-vaceMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vaceMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-vaceMe/Pods-vaceMe.release.xcconfig"; sourceTree = "<group>"; };
+		CE7CC07B1F53811600B35588 /* vaceMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vaceMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7CC07E1F53811600B35588 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE7CC0801F53811600B35588 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE7CC0831F53811600B35588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE7CC0861F53811600B35588 /* vaceMe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = vaceMe.xcdatamodel; sourceTree = "<group>"; };
+		CE7CC0881F53811600B35588 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE7CC08B1F53811600B35588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE7CC08D1F53811600B35588 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE7CC0921F53811600B35588 /* vaceMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vaceMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7CC0961F53811600B35588 /* vaceMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vaceMeTests.swift; sourceTree = "<group>"; };
+		CE7CC0981F53811700B35588 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE7CC09D1F53811700B35588 /* vaceMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vaceMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7CC0A11F53811700B35588 /* vaceMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vaceMeUITests.swift; sourceTree = "<group>"; };
+		CE7CC0A31F53811700B35588 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE7CC0AF1F53816D00B35588 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE7CC0781F53811600B35588 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D99AE7497C44191C0CAC36B /* libPods-vaceMe.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7CC08F1F53811600B35588 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7CC09A1F53811700B35588 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		553E13D11A2E0CAAA525900E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A93F98309EB55292D326C7A /* libPods-vaceMe.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A75BDA20AAEFE7D96C70F89 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				971B532D29A0B4F47B89CDE9 /* Pods-vaceMe.debug.xcconfig */,
+				BB08F726CD881FAF8F7F9D57 /* Pods-vaceMe.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE7CC0721F53811600B35588 = {
+			isa = PBXGroup;
+			children = (
+				CE7CC0AF1F53816D00B35588 /* Podfile */,
+				CE7CC07D1F53811600B35588 /* vaceMe */,
+				CE7CC0951F53811600B35588 /* vaceMeTests */,
+				CE7CC0A01F53811700B35588 /* vaceMeUITests */,
+				CE7CC07C1F53811600B35588 /* Products */,
+				5A75BDA20AAEFE7D96C70F89 /* Pods */,
+				553E13D11A2E0CAAA525900E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE7CC07C1F53811600B35588 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE7CC07B1F53811600B35588 /* vaceMe.app */,
+				CE7CC0921F53811600B35588 /* vaceMeTests.xctest */,
+				CE7CC09D1F53811700B35588 /* vaceMeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE7CC07D1F53811600B35588 /* vaceMe */ = {
+			isa = PBXGroup;
+			children = (
+				CE7CC07E1F53811600B35588 /* AppDelegate.swift */,
+				CE7CC0801F53811600B35588 /* ViewController.swift */,
+				CE7CC0821F53811600B35588 /* Main.storyboard */,
+				CE7CC0881F53811600B35588 /* Assets.xcassets */,
+				CE7CC08A1F53811600B35588 /* LaunchScreen.storyboard */,
+				CE7CC08D1F53811600B35588 /* Info.plist */,
+				CE7CC0851F53811600B35588 /* vaceMe.xcdatamodeld */,
+			);
+			path = vaceMe;
+			sourceTree = "<group>";
+		};
+		CE7CC0951F53811600B35588 /* vaceMeTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE7CC0961F53811600B35588 /* vaceMeTests.swift */,
+				CE7CC0981F53811700B35588 /* Info.plist */,
+			);
+			path = vaceMeTests;
+			sourceTree = "<group>";
+		};
+		CE7CC0A01F53811700B35588 /* vaceMeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE7CC0A11F53811700B35588 /* vaceMeUITests.swift */,
+				CE7CC0A31F53811700B35588 /* Info.plist */,
+			);
+			path = vaceMeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE7CC07A1F53811600B35588 /* vaceMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE7CC0A61F53811700B35588 /* Build configuration list for PBXNativeTarget "vaceMe" */;
+			buildPhases = (
+				A5216BFC865D9E50D96F5435 /* [CP] Check Pods Manifest.lock */,
+				CE7CC0771F53811600B35588 /* Sources */,
+				CE7CC0781F53811600B35588 /* Frameworks */,
+				CE7CC0791F53811600B35588 /* Resources */,
+				0D3ACF75604A831270815D5B /* [CP] Embed Pods Frameworks */,
+				0C4992C038B164B4D6E8E0F7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vaceMe;
+			productName = vaceMe;
+			productReference = CE7CC07B1F53811600B35588 /* vaceMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE7CC0911F53811600B35588 /* vaceMeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE7CC0A91F53811700B35588 /* Build configuration list for PBXNativeTarget "vaceMeTests" */;
+			buildPhases = (
+				CE7CC08E1F53811600B35588 /* Sources */,
+				CE7CC08F1F53811600B35588 /* Frameworks */,
+				CE7CC0901F53811600B35588 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE7CC0941F53811600B35588 /* PBXTargetDependency */,
+			);
+			name = vaceMeTests;
+			productName = vaceMeTests;
+			productReference = CE7CC0921F53811600B35588 /* vaceMeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE7CC09C1F53811700B35588 /* vaceMeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE7CC0AC1F53811700B35588 /* Build configuration list for PBXNativeTarget "vaceMeUITests" */;
+			buildPhases = (
+				CE7CC0991F53811700B35588 /* Sources */,
+				CE7CC09A1F53811700B35588 /* Frameworks */,
+				CE7CC09B1F53811700B35588 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE7CC09F1F53811700B35588 /* PBXTargetDependency */,
+			);
+			name = vaceMeUITests;
+			productName = vaceMeUITests;
+			productReference = CE7CC09D1F53811700B35588 /* vaceMeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE7CC0731F53811600B35588 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = user;
+				TargetAttributes = {
+					CE7CC07A1F53811600B35588 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = DHVP5UV9X4;
+						ProvisioningStyle = Automatic;
+					};
+					CE7CC0911F53811600B35588 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CE7CC07A1F53811600B35588;
+					};
+					CE7CC09C1F53811700B35588 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CE7CC07A1F53811600B35588;
+					};
+				};
+			};
+			buildConfigurationList = CE7CC0761F53811600B35588 /* Build configuration list for PBXProject "vaceMe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE7CC0721F53811600B35588;
+			productRefGroup = CE7CC07C1F53811600B35588 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE7CC07A1F53811600B35588 /* vaceMe */,
+				CE7CC0911F53811600B35588 /* vaceMeTests */,
+				CE7CC09C1F53811700B35588 /* vaceMeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE7CC0791F53811600B35588 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7CC08C1F53811600B35588 /* LaunchScreen.storyboard in Resources */,
+				CE7CC0891F53811600B35588 /* Assets.xcassets in Resources */,
+				CE7CC0B01F53816D00B35588 /* Podfile in Resources */,
+				CE7CC0841F53811600B35588 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7CC0901F53811600B35588 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7CC09B1F53811700B35588 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C4992C038B164B4D6E8E0F7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-vaceMe/Pods-vaceMe-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-vaceMe/Pods-vaceMe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0D3ACF75604A831270815D5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-vaceMe/Pods-vaceMe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5216BFC865D9E50D96F5435 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-vaceMe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE7CC0771F53811600B35588 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7CC0811F53811600B35588 /* ViewController.swift in Sources */,
+				CE7CC07F1F53811600B35588 /* AppDelegate.swift in Sources */,
+				CE7CC0871F53811600B35588 /* vaceMe.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7CC08E1F53811600B35588 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7CC0971F53811600B35588 /* vaceMeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7CC0991F53811700B35588 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7CC0A21F53811700B35588 /* vaceMeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE7CC0941F53811600B35588 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE7CC07A1F53811600B35588 /* vaceMe */;
+			targetProxy = CE7CC0931F53811600B35588 /* PBXContainerItemProxy */;
+		};
+		CE7CC09F1F53811700B35588 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE7CC07A1F53811600B35588 /* vaceMe */;
+			targetProxy = CE7CC09E1F53811700B35588 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE7CC0821F53811600B35588 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE7CC0831F53811600B35588 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE7CC08A1F53811600B35588 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE7CC08B1F53811600B35588 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE7CC0A41F53811700B35588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE7CC0A51F53811700B35588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE7CC0A71F53811700B35588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 971B532D29A0B4F47B89CDE9 /* Pods-vaceMe.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DHVP5UV9X4;
+				INFOPLIST_FILE = vaceMe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = user.vaceMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CE7CC0A81F53811700B35588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB08F726CD881FAF8F7F9D57 /* Pods-vaceMe.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DHVP5UV9X4;
+				INFOPLIST_FILE = vaceMe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = user.vaceMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CE7CC0AA1F53811700B35588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = vaceMeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = user.vaceMeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vaceMe.app/vaceMe";
+			};
+			name = Debug;
+		};
+		CE7CC0AB1F53811700B35588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = vaceMeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = user.vaceMeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vaceMe.app/vaceMe";
+			};
+			name = Release;
+		};
+		CE7CC0AD1F53811700B35588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = vaceMeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = user.vaceMeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = vaceMe;
+			};
+			name = Debug;
+		};
+		CE7CC0AE1F53811700B35588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = vaceMeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = user.vaceMeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = vaceMe;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE7CC0761F53811600B35588 /* Build configuration list for PBXProject "vaceMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE7CC0A41F53811700B35588 /* Debug */,
+				CE7CC0A51F53811700B35588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE7CC0A61F53811700B35588 /* Build configuration list for PBXNativeTarget "vaceMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE7CC0A71F53811700B35588 /* Debug */,
+				CE7CC0A81F53811700B35588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CE7CC0A91F53811700B35588 /* Build configuration list for PBXNativeTarget "vaceMeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE7CC0AA1F53811700B35588 /* Debug */,
+				CE7CC0AB1F53811700B35588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CE7CC0AC1F53811700B35588 /* Build configuration list for PBXNativeTarget "vaceMeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE7CC0AD1F53811700B35588 /* Debug */,
+				CE7CC0AE1F53811700B35588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE7CC0851F53811600B35588 /* vaceMe.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE7CC0861F53811600B35588 /* vaceMe.xcdatamodel */,
+			);
+			currentVersion = CE7CC0861F53811600B35588 /* vaceMe.xcdatamodel */;
+			path = vaceMe.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CE7CC0731F53811600B35588 /* Project object */;
+}
