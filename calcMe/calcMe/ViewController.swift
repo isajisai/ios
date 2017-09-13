@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var display: UILabel!
 
+    var userIsInTheMiddleOfTyping = false
+    
     @IBAction func touchDigit(_ sender: UIButton) {
         let digit = sender.currentTitle!
         let textCurrentlyInDisplay = display.text!
@@ -22,29 +24,29 @@ class ViewController: UIViewController {
         display.text! = textCurrentlyInDisplay + digit
     }
     
-    @IBAction func touchAction(_ sender: UIButton) {
-        if let currentSymbol = sender.currentTitle{
-            switch currentSymbol {
-                case "AC":
-                    display.text! = "0"
-                case "⁺∕₋":
-                    if display.text![display.text!.startIndex] != "-" {
-                        display.text! = "-" + display.text!
-                    } else {
-                        display.text!.characters.removeFirst()
-                    }
-                case "π":
-                    display.text! = String(Double.pi)
-                case "e":
-                    display.text! = String(M_E)
-                case "φ":
-                    display.text! = String(1.61803398874989)
-                default:
-                    break
-            }
+    var displayValue: Double {
+        get {
+            return Double(display.text!)!
         }
-        
+        set {
+            display.text = String(newValue)
+        }
     }
+    
+    private var brain = CalculatorBrain()
+    
+    @IBAction func performOperation(_ sender: UIButton) {
+        if userIsInTheMiddleOfTyping {
+            brain.setOperand(displayValue)
+            userIsInTheMiddleOfTyping = false
+        }
+        if let mathematicalSymbol = sender.currentTitle {
+            brain.performOperation(mathematicalSymbol)
+        }
+        if let brainResult = brain.result {
+            displayValue = brainResult
+        }
+    }    
 
 }
 

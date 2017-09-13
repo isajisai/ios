@@ -15,6 +15,7 @@
 		CE41C0771F566BD500C4CE52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE41C0751F566BD500C4CE52 /* LaunchScreen.storyboard */; };
 		CE41C0821F566BD500C4CE52 /* calcMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41C0811F566BD500C4CE52 /* calcMeTests.swift */; };
 		CE41C08D1F566BD500C4CE52 /* calcMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE41C08C1F566BD500C4CE52 /* calcMeUITests.swift */; };
+		CE9279561F6870EE00E13C88 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9279551F6870EE00E13C88 /* CalculatorBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		CE41C0881F566BD500C4CE52 /* calcMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calcMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE41C08C1F566BD500C4CE52 /* calcMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calcMeUITests.swift; sourceTree = "<group>"; };
 		CE41C08E1F566BD500C4CE52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE9279551F6870EE00E13C88 /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +101,10 @@
 		CE41C0681F566BD400C4CE52 /* calcMe */ = {
 			isa = PBXGroup;
 			children = (
-				CE41C0691F566BD400C4CE52 /* AppDelegate.swift */,
+				CE9279551F6870EE00E13C88 /* CalculatorBrain.swift */,
 				CE41C06B1F566BD400C4CE52 /* ViewController.swift */,
 				CE41C06D1F566BD400C4CE52 /* Main.storyboard */,
+				CE41C0691F566BD400C4CE52 /* AppDelegate.swift */,
 				CE41C0731F566BD500C4CE52 /* Assets.xcassets */,
 				CE41C0751F566BD500C4CE52 /* LaunchScreen.storyboard */,
 				CE41C0781F566BD500C4CE52 /* Info.plist */,
@@ -191,23 +194,26 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = user;
 				TargetAttributes = {
 					CE41C0651F566BD400C4CE52 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = DHVP5UV9X4;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					CE41C07C1F566BD500C4CE52 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = DHVP5UV9X4;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = CE41C0651F566BD400C4CE52;
 					};
 					CE41C0871F566BD500C4CE52 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = DHVP5UV9X4;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = CE41C0651F566BD400C4CE52;
 					};
@@ -267,6 +273,7 @@
 			files = (
 				CE41C0721F566BD500C4CE52 /* calcMe.xcdatamodeld in Sources */,
 				CE41C06C1F566BD400C4CE52 /* ViewController.swift in Sources */,
+				CE9279561F6870EE00E13C88 /* CalculatorBrain.swift in Sources */,
 				CE41C06A1F566BD400C4CE52 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,7 +339,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -340,7 +349,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -383,7 +396,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -391,7 +406,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -426,7 +445,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = user.calcMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -439,7 +459,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = user.calcMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -453,7 +474,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = user.calcMeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/calcMe.app/calcMe";
 			};
 			name = Debug;
@@ -468,7 +490,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = user.calcMeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/calcMe.app/calcMe";
 			};
 			name = Release;
@@ -482,7 +505,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = user.calcMeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = calcMe;
 			};
 			name = Debug;
@@ -496,7 +520,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = user.calcMeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = calcMe;
 			};
 			name = Release;
@@ -520,6 +545,7 @@
 				CE41C0931F566BD500C4CE52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE41C0941F566BD500C4CE52 /* Build configuration list for PBXNativeTarget "calcMeTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +554,7 @@
 				CE41C0961F566BD500C4CE52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE41C0971F566BD500C4CE52 /* Build configuration list for PBXNativeTarget "calcMeUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +563,7 @@
 				CE41C0991F566BD500C4CE52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
